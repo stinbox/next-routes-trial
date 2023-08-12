@@ -1,12 +1,12 @@
 import { FC, ReactNode } from "react";
 
 const Layout: FC<{
-  list: ReactNode;
+  children: ReactNode;
   detail: ReactNode;
-}> = ({ list, detail }) => {
+}> = ({ children, detail }) => {
   return (
     <main className="p-16">
-      {list}
+      {children}
       {detail}
     </main>
   );
